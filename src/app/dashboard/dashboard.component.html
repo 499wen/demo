@@ -1,0 +1,22 @@
+
+
+  <div class="midden">
+    <div class="login">
+
+        用户名：<input type="text" [(ngModel)]="username" >
+        密码：<input type="password" [(ngModel)]="password" >
+      <input type="button" value="登录" (click)="is_exist()">
+    </div>
+
+    <ul *ngIf=" bool">  
+      <li *ngFor="let child of user | async">
+
+        用户名： {{ child.username}}  <br>
+        密码： {{ child.password }} <br>
+        id： {{ child.id}}  <br>
+        邮箱： {{ child.email }}  <br>
+
+      </li>
+    </ul>
+
+  </div>

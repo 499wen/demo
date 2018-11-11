@@ -1,0 +1,27 @@
+.midden {
+    width: 980px;
+    height: 500px;
+    background-color: rgba(204, 204, 204 ,.2);
+    margin: 30px auto;
+    padding: 20px 0;
+}
+
+.midden .login{
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+ul {
+    border-top: 1px solid #fff;
+    list-style: none;
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul > li {
+    border-bottom: 1px solid #fff;
+    margin: 10px 0;
+}
