@@ -1,0 +1,19 @@
+1、项目拉下来后  在CLI中运行 npm install
+
+2、找到src\app\dashboard\dashboard.component.ts文件
+
+将下面函数 ngOnInit(){} 中的内容注释
+ ngOnInit() {
+    this.user = this.apollo
+      .watchQuery({query: FeedQuery})
+      .valueChanges.pipe(map(({data}) => data.users));
+  }
+
+3、cli运行 ng serve --open
+
+4、将函数 ngOnInit(){} 中的注释取消
+ ngOnInit() {
+    this.user = this.apollo
+      .watchQuery({query: FeedQuery})
+      .valueChanges.pipe(map(({data}) => data.users));
+  }
